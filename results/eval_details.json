@@ -1,0 +1,2803 @@
+[
+  {
+    "q": "系统隔多久采集一次数据？",
+    "answerable": true,
+    "answer": "采集器支持主机、容器、数据库、中间件四类模板，也支持通过 HTTP 拉取自定义指标。[1]L3 及以上数据必须加密存储，静态加密算法为 AES-256，密钥由密钥管理服务统一托管并每 90 天轮换一次。[2]。",
+    "gold_answer": "默认采集周期为 15 秒，可在 5 秒到 60 秒之间调整。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "doc_title": "云枢监控平台 V3.2 功能说明",
+        "section": "数据采集"
+      },
+      {
+        "n": 2,
+        "chunk_id": "04928cd2d7",
+        "doc_id": "data_security",
+        "doc_title": "数据分级与权限管理",
+        "section": "数据分级"
+      }
+    ],
+    "gold": [
+      "monitor_platform::数据采集"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.4837
+      },
+      {
+        "chunk_id": "04928cd2d7",
+        "doc_id": "data_security",
+        "section": "数据分级",
+        "score": 0.3595
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.3511
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.3089
+      },
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.2957
+      },
+      {
+        "chunk_id": "64ee49ba03",
+        "doc_id": "data_security",
+        "section": "跨租户隔离",
+        "score": 0.2629
+      }
+    ],
+    "f1": 0.0602,
+    "latency_ms": 2.82
+  },
+  {
+    "q": "监控指标能存多久？",
+    "answerable": true,
+    "answer": "云枢监控平台面向中大型企业的混合云环境，提供指标、日志、链路三类可观测数据的统一接入与告警联动。[2]。",
+    "gold_answer": "指标数据默认保留 90 天。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 2,
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "doc_title": "云枢监控平台 V3.2 功能说明",
+        "section": "产品定位"
+      }
+    ],
+    "gold": [
+      "monitor_platform::存储与查询"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "da429d0919",
+        "doc_id": "monitor_platform",
+        "section": "存储与查询",
+        "score": 0.5134
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.5038
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.3617
+      },
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.3616
+      },
+      {
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "section": "告警联动",
+        "score": 0.2942
+      },
+      {
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "section": "分级标准",
+        "score": 0.2352
+      }
+    ],
+    "f1": 0.1176,
+    "latency_ms": 2.52
+  },
+  {
+    "q": "一个采集集群最多管多少台目标？",
+    "answerable": true,
+    "answer": "单个采集集群最多纳管 5000 个采集目标，超过后需要拆分集群。[1]。",
+    "gold_answer": "单个采集集群最多纳管 5000 个采集目标。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "doc_title": "云枢监控平台 V3.2 功能说明",
+        "section": "数据采集"
+      }
+    ],
+    "gold": [
+      "monitor_platform::数据采集"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.6047
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.2806
+      },
+      {
+        "chunk_id": "2145df6bf9",
+        "doc_id": "faq",
+        "section": "计费方式",
+        "score": 0.2413
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.1856
+      },
+      {
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "section": "权限模型",
+        "score": 0.181
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.181
+      }
+    ],
+    "f1": 0.7632,
+    "latency_ms": 2.75
+  },
+  {
+    "q": "查询接口在千万级数据量下的响应时间是多少？",
+    "answerable": true,
+    "answer": "指标查询接口在千万级数据量下的 P99 延迟约为 800 毫秒，跨租户聚合查询不在支持范围内。[1]。",
+    "gold_answer": "千万级数据量下 P99 延迟约为 800 毫秒。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "da429d0919",
+        "doc_id": "monitor_platform",
+        "doc_title": "云枢监控平台 V3.2 功能说明",
+        "section": "存储与查询"
+      }
+    ],
+    "gold": [
+      "monitor_platform::存储与查询"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "da429d0919",
+        "doc_id": "monitor_platform",
+        "section": "存储与查询",
+        "score": 0.4894
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.2816
+      },
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.2724
+      },
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.2639
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.2573
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.257
+      }
+    ],
+    "f1": 0.5319,
+    "latency_ms": 2.84
+  },
+  {
+    "q": "短信通道是平台自带的吗？",
+    "answerable": true,
+    "answer": "平台不提供独立的告警短信通道，短信能力由企业自建的短信网关对接。[1]。",
+    "gold_answer": "不提供，短信能力由企业自建的短信网关对接。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "doc_title": "云枢监控平台 V3.2 功能说明",
+        "section": "告警联动"
+      }
+    ],
+    "gold": [
+      "monitor_platform::告警联动"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "section": "告警联动",
+        "score": 0.3529
+      },
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.1521
+      },
+      {
+        "chunk_id": "455837afd1",
+        "doc_id": "api_auth",
+        "section": "鉴权方式",
+        "score": 0.0996
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.0963
+      },
+      {
+        "chunk_id": "6cbbe6fa81",
+        "doc_id": "release_process",
+        "section": "变更评审",
+        "score": 0.095
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.0867
+      }
+    ],
+    "f1": 0.7579,
+    "latency_ms": 2.31
+  },
+  {
+    "q": "每个租户默认最多可以创建多少个仪表盘？",
+    "answerable": true,
+    "answer": "平台以租户为单位隔离数据，每个租户默认最多创建 200 个仪表盘。[1]。",
+    "gold_answer": "每个租户默认最多创建 200 个仪表盘。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "doc_title": "云枢监控平台 V3.2 功能说明",
+        "section": "产品定位"
+      }
+    ],
+    "gold": [
+      "monitor_platform::产品定位"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.4714
+      },
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.2325
+      },
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.2249
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.2177
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.1973
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.1842
+      }
+    ],
+    "f1": 0.6923,
+    "latency_ms": 2.55
+  },
+  {
+    "q": "告警要连续命中几次才发出来？",
+    "answerable": true,
+    "answer": "每条规则需要配置判定周期与连续命中次数，默认连续 3 个周期命中才触发告警，避免单点毛刺造成误报。[1]。",
+    "gold_answer": "默认连续 3 个周期命中才触发告警。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "doc_title": "告警规则配置指南",
+        "section": "触发条件"
+      }
+    ],
+    "gold": [
+      "alert_rules::触发条件"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.5505
+      },
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.2767
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.2367
+      },
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.217
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.1951
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.1875
+      }
+    ],
+    "f1": 0.4865,
+    "latency_ms": 2.3
+  },
+  {
+    "q": "维护时最多能把告警静音多长时间？",
+    "answerable": true,
+    "answer": "维护窗口内可以对规则或实例设置静默，单次静默最长 7 天，到期自动解除。[1]抑制用于压制定级较低的衍生告警，当上游告警未恢复时，下游告警的抑制窗口默认为 10 分钟。[1]。",
+    "gold_answer": "单次静默最长 7 天，到期自动解除。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "doc_title": "告警规则配置指南",
+        "section": "静默与抑制"
+      }
+    ],
+    "gold": [
+      "alert_rules::静默与抑制"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.5262
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.2634
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.2439
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.2216
+      },
+      {
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "section": "权限模型",
+        "score": 0.2181
+      },
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.2175
+      }
+    ],
+    "f1": 0.3077,
+    "latency_ms": 2.4
+  },
+  {
+    "q": "下游告警的抑制窗口默认是多少分钟？",
+    "answerable": true,
+    "answer": "抑制用于压制定级较低的衍生告警，当上游告警未恢复时，下游告警的抑制窗口默认为 10 分钟。[1]。",
+    "gold_answer": "下游告警的抑制窗口默认为 10 分钟。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "doc_title": "告警规则配置指南",
+        "section": "静默与抑制"
+      }
+    ],
+    "gold": [
+      "alert_rules::静默与抑制"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.5888
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.216
+      },
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.2053
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.2045
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.175
+      },
+      {
+        "chunk_id": "da429d0919",
+        "doc_id": "monitor_platform",
+        "section": "存储与查询",
+        "score": 0.1732
+      }
+    ],
+    "f1": 0.5347,
+    "latency_ms": 2.91
+  },
+  {
+    "q": "P1 级告警通过哪些渠道通知？",
+    "answerable": true,
+    "answer": "P0 级告警同时发送电话与短信，P1 级发送企业微信与邮件，P2 级仅发送邮件，P3 级进入每日汇总。[1]值班期间不得关闭告警通知，手机需要保持畅通。[2]。",
+    "gold_answer": "P1 级发送企业微信与邮件。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "doc_title": "告警规则配置指南",
+        "section": "通知与升级"
+      },
+      {
+        "n": 2,
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "doc_title": "值班与升级机制",
+        "section": "响应要求"
+      }
+    ],
+    "gold": [
+      "alert_rules::通知与升级"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.4379
+      },
+      {
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "section": "响应要求",
+        "score": 0.2813
+      },
+      {
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "section": "告警联动",
+        "score": 0.2311
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.1954
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.1636
+      },
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.1388
+      }
+    ],
+    "f1": 0.3077,
+    "latency_ms": 2.68
+  },
+  {
+    "q": "告警发出后多久无人认领会自动升级？",
+    "answerable": true,
+    "answer": "告警发出后 15 分钟内无人认领会自动升级到值班主管。[1]。",
+    "gold_answer": "15 分钟内无人认领会自动升级到值班主管。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "doc_title": "告警规则配置指南",
+        "section": "通知与升级"
+      }
+    ],
+    "gold": [
+      "alert_rules::通知与升级"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.5749
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.3501
+      },
+      {
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "section": "响应要求",
+        "score": 0.3137
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.2392
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.2343
+      },
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.2305
+      }
+    ],
+    "f1": 0.8718,
+    "latency_ms": 2.54
+  },
+  {
+    "q": "告警恢复条件默认要求连续几个周期回到正常区间？",
+    "answerable": true,
+    "answer": "规则支持设置恢复条件，恢复默认要求连续 5 个周期回到正常区间。[1]。",
+    "gold_answer": "恢复默认要求连续 5 个周期回到正常区间。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "doc_title": "告警规则配置指南",
+        "section": "触发条件"
+      }
+    ],
+    "gold": [
+      "alert_rules::触发条件"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.5917
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.228
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.2103
+      },
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.1942
+      },
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.1825
+      },
+      {
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "section": "响应要求",
+        "score": 0.1804
+      }
+    ],
+    "f1": 0.7674,
+    "latency_ms": 2.7
+  },
+  {
+    "q": "最严重的故障要求几分钟内有人接手？",
+    "answerable": true,
+    "answer": "根据现有资料无法确定。",
+    "gold_answer": "P0 要求 5 分钟内响应。",
+    "refused": true,
+    "citations": [],
+    "gold": [
+      "incident_sla::响应时限"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.4939
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.416
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.3866
+      },
+      {
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "section": "响应要求",
+        "score": 0.3459
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.3046
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.2664
+      }
+    ],
+    "f1": 0.0,
+    "latency_ms": 2.23
+  },
+  {
+    "q": "P1 故障多久必须恢复？",
+    "answerable": true,
+    "answer": "P0 与 P1 故障要求在恢复后 48 小时内提交复盘报告，内容包含时间线、根因、影响面、改进项与责任人。[1]P0 故障必须拉起战时群，每 30 分钟同步一次进展。[2]。",
+    "gold_answer": "P1 要求 2 小时内恢复。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "doc_title": "故障分级与响应 SLA",
+        "section": "复盘要求"
+      },
+      {
+        "n": 2,
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "doc_title": "故障分级与响应 SLA",
+        "section": "升级路径"
+      }
+    ],
+    "gold": [
+      "incident_sla::响应时限"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.481
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.4763
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.3995
+      },
+      {
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "section": "分级标准",
+        "score": 0.3457
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.2752
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.1961
+      }
+    ],
+    "f1": 0.2149,
+    "latency_ms": 2.31
+  },
+  {
+    "q": "P0 与 P1 故障的复盘报告需要在多久内提交？",
+    "answerable": true,
+    "answer": "P0 与 P1 故障要求在恢复后 48 小时内提交复盘报告，内容包含时间线、根因、影响面、改进项与责任人。[1]。",
+    "gold_answer": "要求在恢复后 48 小时内提交复盘报告。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "doc_title": "故障分级与响应 SLA",
+        "section": "复盘要求"
+      }
+    ],
+    "gold": [
+      "incident_sla::复盘要求"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.5921
+      },
+      {
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "section": "分级标准",
+        "score": 0.2942
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.2939
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.2801
+      },
+      {
+        "chunk_id": "7a112be829",
+        "doc_id": "hr_policy",
+        "section": "差旅报销",
+        "score": 0.2649
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.2505
+      }
+    ],
+    "f1": 0.58,
+    "latency_ms": 3.41
+  },
+  {
+    "q": "故障定级中 P0 的影响范围标准是什么？",
+    "answerable": true,
+    "answer": "故障按业务影响分为 P0 到 P3 四级。[1]P0 指核心交易链路完全不可用或大面积数据错误，影响超过 30% 的用户；[1]。",
+    "gold_answer": "核心交易链路完全不可用或大面积数据错误，影响超过 30% 的用户。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "doc_title": "故障分级与响应 SLA",
+        "section": "分级标准"
+      }
+    ],
+    "gold": [
+      "incident_sla::分级标准"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "section": "分级标准",
+        "score": 0.4167
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.2897
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.2772
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.2111
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.1835
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.1494
+      }
+    ],
+    "f1": 0.7813,
+    "latency_ms": 3.55
+  },
+  {
+    "q": "复盘改进项需要在多久内完成至少 50%？",
+    "answerable": true,
+    "answer": "改进项需要在两周内完成至少 50%，逾期由质量团队跟踪。[1]。",
+    "gold_answer": "改进项需要在两周内完成至少 50%。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "doc_title": "故障分级与响应 SLA",
+        "section": "复盘要求"
+      }
+    ],
+    "gold": [
+      "incident_sla::复盘要求"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.5468
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.2572
+      },
+      {
+        "chunk_id": "461e543730",
+        "doc_id": "oncall",
+        "section": "交接班",
+        "score": 0.1985
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.1674
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.1488
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.1441
+      }
+    ],
+    "f1": 0.7429,
+    "latency_ms": 2.65
+  },
+  {
+    "q": "每周什么时候可以上线发布？",
+    "answerable": true,
+    "answer": "常规发布窗口为每周二、周四的 20:00 到 23:00，节假日与重大活动期间冻结变更。[1]观察期内核心指标错误率超过 0.5% 或 P99 延迟上涨超过 30% 时，流水线自动暂停并通知发布人。[2]。",
+    "gold_answer": "常规发布窗口为每周二、周四的 20:00 到 23:00。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "发布窗口"
+      },
+      {
+        "n": 2,
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "灰度策略"
+      }
+    ],
+    "gold": [
+      "release_process::发布窗口"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.5082
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.4371
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.3058
+      },
+      {
+        "chunk_id": "6cbbe6fa81",
+        "doc_id": "release_process",
+        "section": "变更评审",
+        "score": 0.2782
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.2361
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.2255
+      }
+    ],
+    "f1": 0.3791,
+    "latency_ms": 2.82
+  },
+  {
+    "q": "灰度发布的流量比例依次是多少？",
+    "answerable": true,
+    "answer": "服务发布默认走灰度流程，流量比例依次为 5%、25%、100%，每个阶段至少观察 10 分钟。[1]。",
+    "gold_answer": "流量比例依次为 5%、25%、100%。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "灰度策略"
+      }
+    ],
+    "gold": [
+      "release_process::灰度策略"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.6465
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.2661
+      },
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.2525
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.2417
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.2126
+      },
+      {
+        "chunk_id": "6cbbe6fa81",
+        "doc_id": "release_process",
+        "section": "变更评审",
+        "score": 0.2043
+      }
+    ],
+    "f1": 0.4384,
+    "latency_ms": 2.56
+  },
+  {
+    "q": "每个灰度阶段至少需要观察多久？",
+    "answerable": true,
+    "answer": "服务发布默认走灰度流程，流量比例依次为 5%、25%、100%，每个阶段至少观察 10 分钟。[1]。",
+    "gold_answer": "每个阶段至少观察 10 分钟。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "灰度策略"
+      }
+    ],
+    "gold": [
+      "release_process::灰度策略"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.538
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.2027
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.1812
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.169
+      },
+      {
+        "chunk_id": "530bb25324",
+        "doc_id": "oncall",
+        "section": "值班安排",
+        "score": 0.157
+      },
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.1493
+      }
+    ],
+    "f1": 0.5,
+    "latency_ms": 2.8
+  },
+  {
+    "q": "回滚使用什么命令？",
+    "answerable": true,
+    "answer": "回滚通过命令 deploy rollback --to 版本号 执行，平均耗时约 3 分钟。[1]。",
+    "gold_answer": "回滚通过 deploy rollback --to 版本号 执行。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "回滚操作"
+      }
+    ],
+    "gold": [
+      "release_process::回滚操作"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.4581
+      },
+      {
+        "chunk_id": "6cbbe6fa81",
+        "doc_id": "release_process",
+        "section": "变更评审",
+        "score": 0.2089
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.1192
+      },
+      {
+        "chunk_id": "455837afd1",
+        "doc_id": "api_auth",
+        "section": "鉴权方式",
+        "score": 0.1177
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.0896
+      },
+      {
+        "chunk_id": "64ee49ba03",
+        "doc_id": "data_security",
+        "section": "跨租户隔离",
+        "score": 0.081
+      }
+    ],
+    "f1": 0.6667,
+    "latency_ms": 4.29
+  },
+  {
+    "q": "回滚平均耗时大约多久？",
+    "answerable": true,
+    "answer": "回滚通过命令 deploy rollback --to 版本号 执行，平均耗时约 3 分钟。[1]。",
+    "gold_answer": "回滚平均耗时约 3 分钟。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "回滚操作"
+      }
+    ],
+    "gold": [
+      "release_process::回滚操作"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.5424
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.2221
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.2084
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.1779
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.1754
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.1664
+      }
+    ],
+    "f1": 0.6038,
+    "latency_ms": 2.54
+  },
+  {
+    "q": "涉及核心链路的发布需要提前多久提交变更评审？",
+    "answerable": true,
+    "answer": "涉及核心链路的发布需要提前一个工作日提交变更评审，评审材料包含影响面分析、灰度计划、回滚预案与监控看板链接。[1]。",
+    "gold_answer": "需要提前一个工作日提交变更评审。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "6cbbe6fa81",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "变更评审"
+      }
+    ],
+    "gold": [
+      "release_process::变更评审"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "6cbbe6fa81",
+        "doc_id": "release_process",
+        "section": "变更评审",
+        "score": 0.5474
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.2966
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.25
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.2046
+      },
+      {
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "section": "分级标准",
+        "score": 0.186
+      },
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.1835
+      }
+    ],
+    "f1": 0.4603,
+    "latency_ms": 2.77
+  },
+  {
+    "q": "调用凭证多久过期？",
+    "answerable": true,
+    "answer": "调用方遇到 429 或 5xx 时应使用指数退避重试，初始间隔 0.5 秒，最多重试 3 次，总耗时不超过 10 秒。[1]。",
+    "gold_answer": "access_token 有效期 2 小时。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "doc_title": "API 鉴权与限流",
+        "section": "重试与错误码"
+      }
+    ],
+    "gold": [
+      "api_auth::鉴权方式"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.4089
+      },
+      {
+        "chunk_id": "455837afd1",
+        "doc_id": "api_auth",
+        "section": "鉴权方式",
+        "score": 0.3052
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.305
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.2544
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.232
+      },
+      {
+        "chunk_id": "0dd6fc013b",
+        "doc_id": "hr_policy",
+        "section": "病假与事假",
+        "score": 0.2226
+      }
+    ],
+    "f1": 0.0274,
+    "latency_ms": 2.47
+  },
+  {
+    "q": "每个租户每秒最多能调多少次接口？",
+    "answerable": true,
+    "answer": "根据现有资料无法确定。",
+    "gold_answer": "默认限流为每租户 100 QPS，允许 200 QPS 瞬时突发。",
+    "refused": true,
+    "citations": [],
+    "gold": [
+      "api_auth::限流策略"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.3711
+      },
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.3597
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.3121
+      },
+      {
+        "chunk_id": "da429d0919",
+        "doc_id": "monitor_platform",
+        "section": "存储与查询",
+        "score": 0.2641
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.2609
+      },
+      {
+        "chunk_id": "530bb25324",
+        "doc_id": "oncall",
+        "section": "值班安排",
+        "score": 0.2279
+      }
+    ],
+    "f1": 0.0,
+    "latency_ms": 2.34
+  },
+  {
+    "q": "请求超过限流后会返回什么状态码？",
+    "answerable": true,
+    "answer": "默认限流为每租户 100 QPS，允许 200 QPS 的瞬时突发，超出后返回 429 状态码并附带 Retry-After 响应头。[1]。",
+    "gold_answer": "返回 429 状态码并附带 Retry-After 响应头。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "doc_title": "API 鉴权与限流",
+        "section": "限流策略"
+      }
+    ],
+    "gold": [
+      "api_auth::限流策略"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.4702
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.2315
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.1706
+      },
+      {
+        "chunk_id": "455837afd1",
+        "doc_id": "api_auth",
+        "section": "鉴权方式",
+        "score": 0.1641
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.1434
+      },
+      {
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "section": "权限模型",
+        "score": 0.0998
+      }
+    ],
+    "f1": 0.525,
+    "latency_ms": 3.5
+  },
+  {
+    "q": "指数退避重试的初始间隔是多少？",
+    "answerable": true,
+    "answer": "调用方遇到 429 或 5xx 时应使用指数退避重试，初始间隔 0.5 秒，最多重试 3 次，总耗时不超过 10 秒。[1]。",
+    "gold_answer": "初始间隔 0.5 秒，最多重试 3 次。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "doc_title": "API 鉴权与限流",
+        "section": "重试与错误码"
+      }
+    ],
+    "gold": [
+      "api_auth::重试与错误码"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.5702
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.1784
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.174
+      },
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.1667
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.166
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.1616
+      }
+    ],
+    "f1": 0.4444,
+    "latency_ms": 2.96
+  },
+  {
+    "q": "旧版本 API 至少维护多久？",
+    "answerable": true,
+    "answer": "API 采用日期版本号，例如 2026-03-01，旧版本至少维护 12 个月。[1]。",
+    "gold_answer": "旧版本至少维护 12 个月。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "doc_title": "API 鉴权与限流",
+        "section": "版本管理"
+      }
+    ],
+    "gold": [
+      "api_auth::版本管理"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.644
+      },
+      {
+        "chunk_id": "455837afd1",
+        "doc_id": "api_auth",
+        "section": "鉴权方式",
+        "score": 0.2355
+      },
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.2299
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.2193
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.1722
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.1664
+      }
+    ],
+    "f1": 0.6415,
+    "latency_ms": 2.44
+  },
+  {
+    "q": "敏感数据落盘时用什么加密？",
+    "answerable": true,
+    "answer": "L1 为公开数据，L2 为内部数据，L3 为敏感数据，L4 为核心数据。[1]L3 及以上数据必须加密存储，静态加密算法为 AES-256，密钥由密钥管理服务统一托管并每 90 天轮换一次。[1]。",
+    "gold_answer": "静态加密算法为 AES-256。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "04928cd2d7",
+        "doc_id": "data_security",
+        "doc_title": "数据分级与权限管理",
+        "section": "数据分级"
+      }
+    ],
+    "gold": [
+      "data_security::数据分级"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "04928cd2d7",
+        "doc_id": "data_security",
+        "section": "数据分级",
+        "score": 0.3997
+      },
+      {
+        "chunk_id": "64ee49ba03",
+        "doc_id": "data_security",
+        "section": "跨租户隔离",
+        "score": 0.1899
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.1348
+      },
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.1284
+      },
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.112
+      },
+      {
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "section": "权限模型",
+        "score": 0.1044
+      }
+    ],
+    "f1": 0.2137,
+    "latency_ms": 2.35
+  },
+  {
+    "q": "审计日志保留多少天？",
+    "answerable": true,
+    "answer": "所有数据访问、导出、权限变更都会写入审计日志，日志保留 180 天且不可篡改。[1]。",
+    "gold_answer": "审计日志保留 180 天且不可篡改。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "doc_title": "数据分级与权限管理",
+        "section": "审计与留痕"
+      }
+    ],
+    "gold": [
+      "data_security::审计与留痕"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.5114
+      },
+      {
+        "chunk_id": "da429d0919",
+        "doc_id": "monitor_platform",
+        "section": "存储与查询",
+        "score": 0.312
+      },
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.2584
+      },
+      {
+        "chunk_id": "461e543730",
+        "doc_id": "oncall",
+        "section": "交接班",
+        "score": 0.2089
+      },
+      {
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "section": "权限模型",
+        "score": 0.199
+      },
+      {
+        "chunk_id": "2145df6bf9",
+        "doc_id": "faq",
+        "section": "计费方式",
+        "score": 0.1924
+      }
+    ],
+    "f1": 0.575,
+    "latency_ms": 2.27
+  },
+  {
+    "q": "单次批量导出的上限是多少条？",
+    "answerable": true,
+    "answer": "批量导出超过 1000 条记录时需要额外填写用途说明，单次导出上限为 5 万条。[1]。",
+    "gold_answer": "单次导出上限为 5 万条。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "doc_title": "数据分级与权限管理",
+        "section": "审计与留痕"
+      }
+    ],
+    "gold": [
+      "data_security::审计与留痕"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.4553
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.2298
+      },
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.2255
+      },
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.201
+      },
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.1902
+      },
+      {
+        "chunk_id": "04928cd2d7",
+        "doc_id": "data_security",
+        "section": "数据分级",
+        "score": 0.1856
+      }
+    ],
+    "f1": 0.4595,
+    "latency_ms": 2.42
+  },
+  {
+    "q": "权限审批的有效期最长多久？",
+    "answerable": true,
+    "answer": "权限申请需要直属主管审批，L3 数据还需要数据Owner 二次审批，审批有效期最长 180 天，到期自动回收。[1]。",
+    "gold_answer": "审批有效期最长 180 天，到期自动回收。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "doc_title": "数据分级与权限管理",
+        "section": "权限模型"
+      }
+    ],
+    "gold": [
+      "data_security::权限模型"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "section": "权限模型",
+        "score": 0.5592
+      },
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.3016
+      },
+      {
+        "chunk_id": "455837afd1",
+        "doc_id": "api_auth",
+        "section": "鉴权方式",
+        "score": 0.2296
+      },
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.204
+      },
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.1893
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.1666
+      }
+    ],
+    "f1": 0.5306,
+    "latency_ms": 3.19
+  },
+  {
+    "q": "年假最多可以休多少天？",
+    "answerable": true,
+    "answer": "年假以自然年为周期计算，当年度未休完的部分最多结转 5 天到次年第一季度，逾期作废。[1]。",
+    "gold_answer": "年假上限 15 天。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "doc_title": "休假与报销制度",
+        "section": "年假规则"
+      }
+    ],
+    "gold": [
+      "hr_policy::年假规则"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.6965
+      },
+      {
+        "chunk_id": "0dd6fc013b",
+        "doc_id": "hr_policy",
+        "section": "病假与事假",
+        "score": 0.3949
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.2354
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.19
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.1856
+      },
+      {
+        "chunk_id": "530bb25324",
+        "doc_id": "oncall",
+        "section": "值班安排",
+        "score": 0.1797
+      }
+    ],
+    "f1": 0.1013,
+    "latency_ms": 2.92
+  },
+  {
+    "q": "差旅报销需要在行程结束后多久内提交？",
+    "answerable": true,
+    "answer": "差旅报销需在行程结束后 3 个工作日内提交，逾期需要补充说明。[1]。",
+    "gold_answer": "需在行程结束后 3 个工作日内提交。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "7a112be829",
+        "doc_id": "hr_policy",
+        "doc_title": "休假与报销制度",
+        "section": "差旅报销"
+      }
+    ],
+    "gold": [
+      "hr_policy::差旅报销"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "7a112be829",
+        "doc_id": "hr_policy",
+        "section": "差旅报销",
+        "score": 0.645
+      },
+      {
+        "chunk_id": "9b04900e65",
+        "doc_id": "hr_policy",
+        "section": "报销流程",
+        "score": 0.3078
+      },
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.22
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.2075
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.1993
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.193
+      }
+    ],
+    "f1": 0.6923,
+    "latency_ms": 2.75
+  },
+  {
+    "q": "出差住酒店一线城市能报多少？",
+    "answerable": true,
+    "answer": "住宿标准为一线城市每晚 600 元、二线城市每晚 400 元、其他城市每晚 300 元。[1]。",
+    "gold_answer": "一线城市每晚 600 元。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "7a112be829",
+        "doc_id": "hr_policy",
+        "doc_title": "休假与报销制度",
+        "section": "差旅报销"
+      }
+    ],
+    "gold": [
+      "hr_policy::差旅报销"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "7a112be829",
+        "doc_id": "hr_policy",
+        "section": "差旅报销",
+        "score": 0.5604
+      },
+      {
+        "chunk_id": "9b04900e65",
+        "doc_id": "hr_policy",
+        "section": "报销流程",
+        "score": 0.1861
+      },
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.1742
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.1684
+      },
+      {
+        "chunk_id": "0dd6fc013b",
+        "doc_id": "hr_policy",
+        "section": "病假与事假",
+        "score": 0.1632
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.1569
+      }
+    ],
+    "f1": 0.4127,
+    "latency_ms": 2.39
+  },
+  {
+    "q": "私有化交付的标准周期是多久？",
+    "answerable": true,
+    "answer": "SaaS 方式开通后 30 分钟内可用，私有化交付的标准周期为 6 到 8 周。[1]。",
+    "gold_answer": "私有化交付的标准周期为 6 到 8 周。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "doc_title": "客户常见问题",
+        "section": "接入与部署"
+      }
+    ],
+    "gold": [
+      "faq::接入与部署"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.4785
+      },
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.1996
+      },
+      {
+        "chunk_id": "461e543730",
+        "doc_id": "oncall",
+        "section": "交接班",
+        "score": 0.1749
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.1691
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.159
+      },
+      {
+        "chunk_id": "7a112be829",
+        "doc_id": "hr_policy",
+        "section": "差旅报销",
+        "score": 0.1555
+      }
+    ],
+    "f1": 0.7042,
+    "latency_ms": 2.53
+  },
+  {
+    "q": "新客户可以免费试用多少天？",
+    "answerable": true,
+    "answer": "新客户提供 30 天免费试用，试用期包含全部专业版功能，但不包含专属技术支持。[1]。",
+    "gold_answer": "新客户提供 30 天免费试用。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "2145df6bf9",
+        "doc_id": "faq",
+        "doc_title": "客户常见问题",
+        "section": "计费方式"
+      }
+    ],
+    "gold": [
+      "faq::计费方式"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "2145df6bf9",
+        "doc_id": "faq",
+        "section": "计费方式",
+        "score": 0.6354
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.2969
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.2656
+      },
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.2642
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.2402
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.1894
+      }
+    ],
+    "f1": 0.4691,
+    "latency_ms": 2.59
+  },
+  {
+    "q": "数据迁移工具支持哪两种数据源？",
+    "answerable": true,
+    "answer": "迁移工具支持 Prometheus、Zabbix 两种数据源。[1]。",
+    "gold_answer": "迁移工具支持 Prometheus、Zabbix 两种数据源。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "doc_title": "客户常见问题",
+        "section": "数据迁移"
+      }
+    ],
+    "gold": [
+      "faq::数据迁移"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.5974
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.1403
+      },
+      {
+        "chunk_id": "04928cd2d7",
+        "doc_id": "data_security",
+        "section": "数据分级",
+        "score": 0.1335
+      },
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.1159
+      },
+      {
+        "chunk_id": "8bcc7aa3ca",
+        "doc_id": "data_security",
+        "section": "权限模型",
+        "score": 0.1153
+      },
+      {
+        "chunk_id": "64ee49ba03",
+        "doc_id": "data_security",
+        "section": "跨租户隔离",
+        "score": 0.1146
+      }
+    ],
+    "f1": 0.9778,
+    "latency_ms": 2.71
+  },
+  {
+    "q": "夜班的值班补贴是多少？",
+    "answerable": true,
+    "answer": "法定节假日值班按三倍工资或调休结算，值班补贴为每个夜班 200 元。[1]。",
+    "gold_answer": "值班补贴为每个夜班 200 元。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "530bb25324",
+        "doc_id": "oncall",
+        "doc_title": "值班与升级机制",
+        "section": "值班安排"
+      }
+    ],
+    "gold": [
+      "oncall::值班安排"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "530bb25324",
+        "doc_id": "oncall",
+        "section": "值班安排",
+        "score": 0.5735
+      },
+      {
+        "chunk_id": "461e543730",
+        "doc_id": "oncall",
+        "section": "交接班",
+        "score": 0.3338
+      },
+      {
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "section": "响应要求",
+        "score": 0.3163
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.3121
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.1965
+      },
+      {
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "section": "分级标准",
+        "score": 0.1847
+      }
+    ],
+    "f1": 0.5278,
+    "latency_ms": 2.53
+  },
+  {
+    "q": "连续两个月误报率超过多少的规则需要下线整改？",
+    "answerable": true,
+    "answer": "连续两个月误报率超过 30% 的规则需要下线整改。[1]。",
+    "gold_answer": "误报率超过 30% 的规则需要下线整改。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "doc_title": "值班与升级机制",
+        "section": "值班复盘"
+      }
+    ],
+    "gold": [
+      "oncall::值班复盘"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.474
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.255
+      },
+      {
+        "chunk_id": "ab85175855",
+        "doc_id": "hr_policy",
+        "section": "年假规则",
+        "score": 0.1943
+      },
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.1926
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.1897
+      },
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.1716
+      }
+    ],
+    "f1": 0.8308,
+    "latency_ms": 2.75
+  },
+  {
+    "q": "P0 故障 30 分钟仍未恢复时按流程应该做什么？",
+    "answerable": true,
+    "answer": "P0 要求 5 分钟内响应、30 分钟内恢复，P1 要求 15 分钟内响应、2 小时内恢复，P2 要求 1 小时内响应、8 小时内恢复，P3 在下一个工作日处理。[1]超过响应时限未认领的故障，系统自动升级到备班，再过 15 分钟升级到技术负责人。[2]。",
+    "gold_answer": "P0 要求 30 分钟内恢复，并必须拉起战时群、每 30 分钟同步进展。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "doc_title": "故障分级与响应 SLA",
+        "section": "响应时限"
+      },
+      {
+        "n": 2,
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "doc_title": "故障分级与响应 SLA",
+        "section": "升级路径"
+      }
+    ],
+    "gold": [
+      "incident_sla::响应时限",
+      "incident_sla::升级路径"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.4017
+      },
+      {
+        "chunk_id": "78bfd66aae",
+        "doc_id": "incident_sla",
+        "section": "升级路径",
+        "score": 0.3735
+      },
+      {
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "section": "响应要求",
+        "score": 0.3228
+      },
+      {
+        "chunk_id": "bcf0e3a0d7",
+        "doc_id": "incident_sla",
+        "section": "复盘要求",
+        "score": 0.2477
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.2248
+      },
+      {
+        "chunk_id": "221844418b",
+        "doc_id": "incident_sla",
+        "section": "分级标准",
+        "score": 0.2193
+      }
+    ],
+    "f1": 0.1827,
+    "latency_ms": 4.79
+  },
+  {
+    "q": "灰度期间错误率超过阈值后流水线会怎么处理，回滚又要多久？",
+    "answerable": true,
+    "answer": "观察期内核心指标错误率超过 0.5% 或 P99 延迟上涨超过 30% 时，流水线自动暂停并通知发布人。[1]。",
+    "gold_answer": "流水线自动暂停并通知发布人；回滚平均耗时约 3 分钟。",
+    "refused": false,
+    "citations": [
+      {
+        "n": 1,
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "doc_title": "发布与回滚流程",
+        "section": "灰度策略"
+      }
+    ],
+    "gold": [
+      "release_process::灰度策略",
+      "release_process::回滚操作"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "dc55d09eb9",
+        "doc_id": "release_process",
+        "section": "灰度策略",
+        "score": 0.535
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.2959
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.2365
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.2313
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.2293
+      },
+      {
+        "chunk_id": "0988adfd40",
+        "doc_id": "api_auth",
+        "section": "限流策略",
+        "score": 0.2163
+      }
+    ],
+    "f1": 0.4771,
+    "latency_ms": 2.78
+  },
+  {
+    "q": "私有化部署的最低服务器配置要求是什么？",
+    "answerable": false,
+    "answer": "根据现有资料无法确定。",
+    "gold_answer": "",
+    "refused": true,
+    "citations": [],
+    "gold": [],
+    "retrieved": [
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.3414
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.1792
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.1749
+      },
+      {
+        "chunk_id": "75df087450",
+        "doc_id": "incident_sla",
+        "section": "响应时限",
+        "score": 0.1635
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.1433
+      },
+      {
+        "chunk_id": "d8a8f86a23",
+        "doc_id": "alert_rules",
+        "section": "静默与抑制",
+        "score": 0.1219
+      }
+    ],
+    "f1": null,
+    "latency_ms": 2.24
+  },
+  {
+    "q": "平台是否支持钉钉告警通知？",
+    "answerable": false,
+    "answer": "平台内置告警规则引擎，支持阈值、同环比、离群点三类判定方式，规则命中后可触发通知、工单、Webhook 三种动作。[2]。",
+    "gold_answer": "",
+    "refused": false,
+    "citations": [
+      {
+        "n": 2,
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "doc_title": "云枢监控平台 V3.2 功能说明",
+        "section": "告警联动"
+      }
+    ],
+    "gold": [],
+    "retrieved": [
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.3404
+      },
+      {
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "section": "告警联动",
+        "score": 0.3237
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.2766
+      },
+      {
+        "chunk_id": "16b51985a9",
+        "doc_id": "oncall",
+        "section": "响应要求",
+        "score": 0.1966
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.1807
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.1748
+      }
+    ],
+    "f1": null,
+    "latency_ms": 2.51
+  },
+  {
+    "q": "Java SDK 的最新版本号是多少？",
+    "answerable": false,
+    "answer": "根据现有资料无法确定。",
+    "gold_answer": "",
+    "refused": true,
+    "citations": [],
+    "gold": [],
+    "retrieved": [
+      {
+        "chunk_id": "7f2b8fcb75",
+        "doc_id": "api_auth",
+        "section": "版本管理",
+        "score": 0.5131
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.276
+      },
+      {
+        "chunk_id": "d17a530fe5",
+        "doc_id": "release_process",
+        "section": "回滚操作",
+        "score": 0.2606
+      },
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.2174
+      },
+      {
+        "chunk_id": "4c432d224c",
+        "doc_id": "api_auth",
+        "section": "重试与错误码",
+        "score": 0.205
+      },
+      {
+        "chunk_id": "2145df6bf9",
+        "doc_id": "faq",
+        "section": "计费方式",
+        "score": 0.1704
+      }
+    ],
+    "f1": null,
+    "latency_ms": 2.18
+  },
+  {
+    "q": "报销发票的邮寄地址在哪里填写？",
+    "answerable": false,
+    "answer": "根据现有资料无法确定。",
+    "gold_answer": "",
+    "refused": true,
+    "citations": [],
+    "gold": [],
+    "retrieved": [
+      {
+        "chunk_id": "9b04900e65",
+        "doc_id": "hr_policy",
+        "section": "报销流程",
+        "score": 0.375
+      },
+      {
+        "chunk_id": "7a112be829",
+        "doc_id": "hr_policy",
+        "section": "差旅报销",
+        "score": 0.2403
+      },
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.1481
+      },
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.0943
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.0756
+      },
+      {
+        "chunk_id": "ea8a68a9c8",
+        "doc_id": "release_process",
+        "section": "发布窗口",
+        "score": 0.0755
+      }
+    ],
+    "f1": null,
+    "latency_ms": 2.08
+  },
+  {
+    "q": "平台是否支持 IPv6 双栈接入？",
+    "answerable": false,
+    "answer": "根据现有资料无法确定。",
+    "gold_answer": "",
+    "refused": true,
+    "citations": [],
+    "gold": [],
+    "retrieved": [
+      {
+        "chunk_id": "1a5be758d9",
+        "doc_id": "faq",
+        "section": "接入与部署",
+        "score": 0.4547
+      },
+      {
+        "chunk_id": "d2462f068a",
+        "doc_id": "faq",
+        "section": "服务支持",
+        "score": 0.1492
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.131
+      },
+      {
+        "chunk_id": "4fb75b1c37",
+        "doc_id": "faq",
+        "section": "数据迁移",
+        "score": 0.1266
+      },
+      {
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "section": "告警联动",
+        "score": 0.1189
+      },
+      {
+        "chunk_id": "9a219995e1",
+        "doc_id": "monitor_platform",
+        "section": "数据采集",
+        "score": 0.1129
+      }
+    ],
+    "f1": null,
+    "latency_ms": 2.04
+  },
+  {
+    "q": "告警短信每月的条数上限是多少？",
+    "answerable": false,
+    "answer": "根据现有资料无法确定。",
+    "gold_answer": "",
+    "refused": true,
+    "citations": [],
+    "gold": [],
+    "retrieved": [
+      {
+        "chunk_id": "d0fb54371b",
+        "doc_id": "alert_rules",
+        "section": "通知与升级",
+        "score": 0.3577
+      },
+      {
+        "chunk_id": "e3e5e8f5da",
+        "doc_id": "alert_rules",
+        "section": "触发条件",
+        "score": 0.335
+      },
+      {
+        "chunk_id": "1344c77593",
+        "doc_id": "monitor_platform",
+        "section": "告警联动",
+        "score": 0.3217
+      },
+      {
+        "chunk_id": "d8d6baf049",
+        "doc_id": "data_security",
+        "section": "审计与留痕",
+        "score": 0.2939
+      },
+      {
+        "chunk_id": "7a639c105d",
+        "doc_id": "oncall",
+        "section": "值班复盘",
+        "score": 0.2595
+      },
+      {
+        "chunk_id": "2a73d8083b",
+        "doc_id": "monitor_platform",
+        "section": "产品定位",
+        "score": 0.2331
+      }
+    ],
+    "f1": null,
+    "latency_ms": 2.15
+  }
+]

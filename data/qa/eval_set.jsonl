@@ -1,0 +1,48 @@
+{"q": "系统隔多久采集一次数据？", "gold": ["monitor_platform::数据采集"], "answer": "默认采集周期为 15 秒，可在 5 秒到 60 秒之间调整。", "answerable": true}
+{"q": "监控指标能存多久？", "gold": ["monitor_platform::存储与查询"], "answer": "指标数据默认保留 90 天。", "answerable": true}
+{"q": "一个采集集群最多管多少台目标？", "gold": ["monitor_platform::数据采集"], "answer": "单个采集集群最多纳管 5000 个采集目标。", "answerable": true}
+{"q": "查询接口在千万级数据量下的响应时间是多少？", "gold": ["monitor_platform::存储与查询"], "answer": "千万级数据量下 P99 延迟约为 800 毫秒。", "answerable": true}
+{"q": "短信通道是平台自带的吗？", "gold": ["monitor_platform::告警联动"], "answer": "不提供，短信能力由企业自建的短信网关对接。", "answerable": true}
+{"q": "每个租户默认最多可以创建多少个仪表盘？", "gold": ["monitor_platform::产品定位"], "answer": "每个租户默认最多创建 200 个仪表盘。", "answerable": true}
+{"q": "告警要连续命中几次才发出来？", "gold": ["alert_rules::触发条件"], "answer": "默认连续 3 个周期命中才触发告警。", "answerable": true}
+{"q": "维护时最多能把告警静音多长时间？", "gold": ["alert_rules::静默与抑制"], "answer": "单次静默最长 7 天，到期自动解除。", "answerable": true}
+{"q": "下游告警的抑制窗口默认是多少分钟？", "gold": ["alert_rules::静默与抑制"], "answer": "下游告警的抑制窗口默认为 10 分钟。", "answerable": true}
+{"q": "P1 级告警通过哪些渠道通知？", "gold": ["alert_rules::通知与升级"], "answer": "P1 级发送企业微信与邮件。", "answerable": true}
+{"q": "告警发出后多久无人认领会自动升级？", "gold": ["alert_rules::通知与升级"], "answer": "15 分钟内无人认领会自动升级到值班主管。", "answerable": true}
+{"q": "告警恢复条件默认要求连续几个周期回到正常区间？", "gold": ["alert_rules::触发条件"], "answer": "恢复默认要求连续 5 个周期回到正常区间。", "answerable": true}
+{"q": "最严重的故障要求几分钟内有人接手？", "gold": ["incident_sla::响应时限"], "answer": "P0 要求 5 分钟内响应。", "answerable": true}
+{"q": "P1 故障多久必须恢复？", "gold": ["incident_sla::响应时限"], "answer": "P1 要求 2 小时内恢复。", "answerable": true}
+{"q": "P0 与 P1 故障的复盘报告需要在多久内提交？", "gold": ["incident_sla::复盘要求"], "answer": "要求在恢复后 48 小时内提交复盘报告。", "answerable": true}
+{"q": "故障定级中 P0 的影响范围标准是什么？", "gold": ["incident_sla::分级标准"], "answer": "核心交易链路完全不可用或大面积数据错误，影响超过 30% 的用户。", "answerable": true}
+{"q": "复盘改进项需要在多久内完成至少 50%？", "gold": ["incident_sla::复盘要求"], "answer": "改进项需要在两周内完成至少 50%。", "answerable": true}
+{"q": "每周什么时候可以上线发布？", "gold": ["release_process::发布窗口"], "answer": "常规发布窗口为每周二、周四的 20:00 到 23:00。", "answerable": true}
+{"q": "灰度发布的流量比例依次是多少？", "gold": ["release_process::灰度策略"], "answer": "流量比例依次为 5%、25%、100%。", "answerable": true}
+{"q": "每个灰度阶段至少需要观察多久？", "gold": ["release_process::灰度策略"], "answer": "每个阶段至少观察 10 分钟。", "answerable": true}
+{"q": "回滚使用什么命令？", "gold": ["release_process::回滚操作"], "answer": "回滚通过 deploy rollback --to 版本号 执行。", "answerable": true}
+{"q": "回滚平均耗时大约多久？", "gold": ["release_process::回滚操作"], "answer": "回滚平均耗时约 3 分钟。", "answerable": true}
+{"q": "涉及核心链路的发布需要提前多久提交变更评审？", "gold": ["release_process::变更评审"], "answer": "需要提前一个工作日提交变更评审。", "answerable": true}
+{"q": "调用凭证多久过期？", "gold": ["api_auth::鉴权方式"], "answer": "access_token 有效期 2 小时。", "answerable": true}
+{"q": "每个租户每秒最多能调多少次接口？", "gold": ["api_auth::限流策略"], "answer": "默认限流为每租户 100 QPS，允许 200 QPS 瞬时突发。", "answerable": true}
+{"q": "请求超过限流后会返回什么状态码？", "gold": ["api_auth::限流策略"], "answer": "返回 429 状态码并附带 Retry-After 响应头。", "answerable": true}
+{"q": "指数退避重试的初始间隔是多少？", "gold": ["api_auth::重试与错误码"], "answer": "初始间隔 0.5 秒，最多重试 3 次。", "answerable": true}
+{"q": "旧版本 API 至少维护多久？", "gold": ["api_auth::版本管理"], "answer": "旧版本至少维护 12 个月。", "answerable": true}
+{"q": "敏感数据落盘时用什么加密？", "gold": ["data_security::数据分级"], "answer": "静态加密算法为 AES-256。", "answerable": true}
+{"q": "审计日志保留多少天？", "gold": ["data_security::审计与留痕"], "answer": "审计日志保留 180 天且不可篡改。", "answerable": true}
+{"q": "单次批量导出的上限是多少条？", "gold": ["data_security::审计与留痕"], "answer": "单次导出上限为 5 万条。", "answerable": true}
+{"q": "权限审批的有效期最长多久？", "gold": ["data_security::权限模型"], "answer": "审批有效期最长 180 天，到期自动回收。", "answerable": true}
+{"q": "年假最多可以休多少天？", "gold": ["hr_policy::年假规则"], "answer": "年假上限 15 天。", "answerable": true}
+{"q": "差旅报销需要在行程结束后多久内提交？", "gold": ["hr_policy::差旅报销"], "answer": "需在行程结束后 3 个工作日内提交。", "answerable": true}
+{"q": "出差住酒店一线城市能报多少？", "gold": ["hr_policy::差旅报销"], "answer": "一线城市每晚 600 元。", "answerable": true}
+{"q": "私有化交付的标准周期是多久？", "gold": ["faq::接入与部署"], "answer": "私有化交付的标准周期为 6 到 8 周。", "answerable": true}
+{"q": "新客户可以免费试用多少天？", "gold": ["faq::计费方式"], "answer": "新客户提供 30 天免费试用。", "answerable": true}
+{"q": "数据迁移工具支持哪两种数据源？", "gold": ["faq::数据迁移"], "answer": "迁移工具支持 Prometheus、Zabbix 两种数据源。", "answerable": true}
+{"q": "夜班的值班补贴是多少？", "gold": ["oncall::值班安排"], "answer": "值班补贴为每个夜班 200 元。", "answerable": true}
+{"q": "连续两个月误报率超过多少的规则需要下线整改？", "gold": ["oncall::值班复盘"], "answer": "误报率超过 30% 的规则需要下线整改。", "answerable": true}
+{"q": "P0 故障 30 分钟仍未恢复时按流程应该做什么？", "gold": ["incident_sla::响应时限", "incident_sla::升级路径"], "answer": "P0 要求 30 分钟内恢复，并必须拉起战时群、每 30 分钟同步进展。", "answerable": true}
+{"q": "灰度期间错误率超过阈值后流水线会怎么处理，回滚又要多久？", "gold": ["release_process::灰度策略", "release_process::回滚操作"], "answer": "流水线自动暂停并通知发布人；回滚平均耗时约 3 分钟。", "answerable": true}
+{"q": "私有化部署的最低服务器配置要求是什么？", "gold": [], "answer": "", "answerable": false}
+{"q": "平台是否支持钉钉告警通知？", "gold": [], "answer": "", "answerable": false}
+{"q": "Java SDK 的最新版本号是多少？", "gold": [], "answer": "", "answerable": false}
+{"q": "报销发票的邮寄地址在哪里填写？", "gold": [], "answer": "", "answerable": false}
+{"q": "平台是否支持 IPv6 双栈接入？", "gold": [], "answer": "", "answerable": false}
+{"q": "告警短信每月的条数上限是多少？", "gold": [], "answer": "", "answerable": false}
